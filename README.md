@@ -113,6 +113,11 @@ bower update
 
 This will find the latest versions that match the version ranges specified in the `bower.json` file.
 
+## Angular Cheat Sheet
+
+I have made an Angular Cheat sheet to go along with this project.
+* ![alt tag](https://raw.githubusercontent.com/danielmhair/angular-template/master/angular-cheatsheet.jpg)
+
 ## Contact
 
 For more information on AngularJS please check out:
