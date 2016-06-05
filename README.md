@@ -1,4 +1,4 @@
-# angular-template - An Angular Template that is lightweight
+# angular-template - A Lightweight Angular Template
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
