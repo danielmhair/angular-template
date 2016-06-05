@@ -118,6 +118,14 @@ This will find the latest versions that match the version ranges specified in th
 I have made an Angular Cheat sheet to go along with this project.
 * ![alt tag](https://raw.githubusercontent.com/danielmhair/angular-template/master/angular-cheatsheet.jpg)
 
+## To-do List
+* Upload Angular Cheatsheet
+- [x] Setup Component-based architecture in Angular App
+- [ ] Create a Robust Service showing the $q and $http service
+- [ ] Create 2 Controllers; 1 in the component.js file, and the other in a separate file
+- [ ] Add Component lifecycle for an example
+- [ ] Convert this using TypeScript and ECMAScript 2016
+
 ## Contact
 
 For more information on AngularJS please check out:
