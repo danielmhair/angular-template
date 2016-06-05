@@ -116,8 +116,8 @@ This will find the latest versions that match the version ranges specified in th
 ## Contact
 
 For more information on AngularJS please check out:
-* [AngularJS] http://angularjs.org/
-* [GIT]: http://git-scm.com/
-* [Bower]: http://bower.io
-* [NPM]: https://www.npmjs.org/
-* [NodeJS]: http://nodejs.org
+* [AngularJS](http://angularjs.org/)
+* [GIT](http://git-scm.com/)
+* [Bower](http://bower.io)
+* [NPM](https://www.npmjs.org/)
+* [NodeJS](http://nodejs.org)
