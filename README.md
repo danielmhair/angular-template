@@ -85,7 +85,7 @@ Should you need to change the port number, simply change it there.
 
 ## Directory Layout
 
-![alt tag](https://raw.githubusercontent.com/danielmhair/angular-template/master/app/assets/img/project-layout.png)
+![alt tag](https://raw.githubusercontent.com/danielmhair/angular-template/master/app/assets/img/project-layout.jpg)
 
 ## Testing
 
