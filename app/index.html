@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>LLNL Angular Template</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS Files -->
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body ng-app="myApp">
+  <!-- The line below replaces what others might be use to as 'ng-view' or ui-view=""' -->
+  <llnl-app></llnl-app>
+
+  <!-- Main Angular Libraries -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/@angular/router/angular1/angular_1_router.js"></script>
+
+  <!-- Controllers -->
+
+  <!-- Components -->
+  <script src="components/llnl-app/llnl-app.component.js"></script>
+  <script src="components/bs-navbar/bs-navbar.component.js"></script>
+  <script src="components/bs-thumbnail/bs-thumbnail.component.js"></script>
+
+  <!-- Directives -->
+
+  <!-- Services -->
+
+  <!-- Application File -->
+  <script src="app.js"></script>
+</body>
+</html>

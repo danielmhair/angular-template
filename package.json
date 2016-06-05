@@ -1,0 +1,25 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "Angular Template",
+  "main": "app.server.js",
+  "dependencies": {
+    "@angular/router": "^0.2.0",
+    "body-parser": "^1.15.1",
+    "compression": "^1.6.2",
+    "connect-livereload": "^0.5.4",
+    "cookie-parser": "^1.4.3",
+    "errorhandler": "^1.4.3",
+    "express": "^4.13.4",
+    "method-override": "^2.3.6",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Hair",
+  "license": "ISC"
+}
