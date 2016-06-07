@@ -1,12 +1,20 @@
 <div class="col-sm-4">
     <div class="thumbnail">
-        <img src="assets/img/{{$ctrl.thumbnail.image}}" alt="{{$ctrl.thumbnail.alt}}">
+        <img ng-src="assets/img/{{$ctrl.thumbnail.image}}" alt="{{$ctrl.thumbnail.alt}}">
         <div class="caption">
             <h3>{{$ctrl.thumbnail.label}}</h3>
             <p>{{$ctrl.thumbnail.content}}</p>
             <p>
-                <a href="#" class="btn btn-primary" role="button">{{$ctrl.thumbnail.firstButtonText}}</a>
-                <a href="#" class="btn btn-default" role="button">{{$ctrl.thumbnail.secondButtonText}}</a>
+                <a href="#" class="btn btn-primary"
+                   ng-if="$ctrl.thumbnail.firstButtonText && $ctrl.thumbnail.firstButtonText != ''"
+                   role="button">
+                    {{$ctrl.thumbnail.firstButtonText}}
+                </a>
+                <a href="#" class="btn btn-default"
+                   ng-if="$ctrl.thumbnail.secondButtonText && $ctrl.thumbnail.secondButtonText != ''"
+                   role="button">
+                    {{$ctrl.thumbnail.secondButtonText}}
+                </a>
             </p>
         </div>
     </div>
