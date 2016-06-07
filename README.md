@@ -86,33 +86,33 @@ Should you need to change the port number, simply change it there.
 ## Directory Layout
 
     .
-    ├── app                 # Angular Application
-    │   ├── app.js              # File that manages the Angular App
-    │   ├── app.routes.js       # Manages the routes within your Angular App
-    │   ├── app.css             # Main CSS File
-    │   ├── lib             # Bower components (via 'bower install...') - defined by the .bowerrc config file
-    │   ├── assets          # Any files you need for your app that don't involve code (images, fonts, css, etc)
-    │        ├── fonts          # Fonts folder
-    │        ├── img            # Images folder
-    │   ├── services                    # Services - The facade between Angular and the Server
-    │   ├── directives                  # Directives - Linked directly with your View
-    │   └── components                  # All your components
-    │        └── <component-name>           # A component
-    │        │   ├── <component-name>.component.js      # The component's definition object
-    │        │   ├── <component-name>.html              # The component's view
-    │        │   ├── <component-name>.controller.js     # The component's controller (optional)
-    │        │   └── <component-name>.css               # The component's styling (optional)
-    │        └── <another-component-name>   # Another component
-    ├── node_modules        # Your modules installed by npm (when you run 'npm install ...'
+    ├── app                                              # Angular Application
+    │   ├── app.js                                       # File that manages the Angular App
+    │   ├── app.routes.js                                # Manages the routes within your Angular App
+    │   ├── app.css                                      # Main CSS File
+    │   ├── lib                                          # Bower components (via 'bower install...') - defined by the .bowerrc config file
+    │   ├── assets                                       # Any files you need for your app that don't involve code (images, fonts, css, etc)
+    │        ├── fonts                                   # Fonts folder
+    │        ├── img                                     # Images folder
+    │   ├── services                                     # Services - The facade between Angular and the Server
+    │   ├── directives                                   # Directives - Linked directly with your View
+    │   └── components                                   # All your components
+    │        └── <component-name>                        # A component
+    │        │   ├── <component-name>.component.js       # The component's definition object
+    │        │   ├── <component-name>.html               # The component's view
+    │        │   ├── <component-name>.controller.js      # The component's controller (optional)
+    │        │   └── <component-name>.css                # The component's styling (optional)
+    │        └── <another-component-name>                # Another component
+    ├── node_modules                                    # Your modules installed by npm (when you run 'npm install ...'
     ├── LICENSE
     ├── README.md
-    ├── package.json        # Config for npm dependencies (the --save attribute will add that dependency to this file)
-    ├── bower.json          # Config for bower dependencies (the --save attribute will add that dependency to this file)
-    ├── .bowerrc            # Config file for bower (tells bower where to put its dependencies)
-    ├── .gitignore          # A file for GIT to know which files to not push up
-    ├── config.js           # A config file for your app
-    ├── server.routes.js    # The routes you allow your angular app to use
-    └── server.js           # The server to runs your angular application
+    ├── package.json                                    # Config for npm dependencies (the --save attribute will add that dependency to this file)
+    ├── bower.json                                      # Config for bower dependencies (the --save attribute will add that dependency to this file)
+    ├── .bowerrc                                        # Config file for bower (tells bower where to put its dependencies)
+    ├── .gitignore                                      # A file for GIT to know which files to not push up
+    ├── config.js                                       # A config file for your app
+    ├── server.routes.js                                # The routes you allow your angular app to use
+    └── server.js                                       # The server to runs your angular application
 
 ## Updating Angular
 

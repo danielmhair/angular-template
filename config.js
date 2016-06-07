@@ -9,7 +9,7 @@ var config = {
   // Root path of server
   root: path.normalize(__dirname),
   // Server port
-  port: process.env.PORT || 3000,
+  port: process.env.PORT || 3001,
   // Server IP
   ip: process.env.IP || '127.0.0.1'
 };

@@ -1,0 +1,9 @@
+<h2>My Views</h2>
+<ul class="nav nav-pills">
+    <li ng-repeat="view in $ctrl.views" role="presentation" class="active">
+        <a ng-link="['ViewDetail', {id: view.id}]">
+            {{view.name}}
+        </a>
+    </li>
+</ul>
+<ng-outlet></ng-outlet>

@@ -10,14 +10,20 @@
   <title>LLNL Angular Template</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- CSS Files -->
+
+  <!-- Module CSS Files -->
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+
+  <!-- Component CSS Files -->
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="components/bs-navbar/bs-navbar.css">
+  <link rel="stylesheet" href="components/root-component/root-component.css">
+
 </head>
 <body ng-app="myApp">
   <!-- The line below replaces what others might be use to as 'ng-view' or ui-view=""' -->
-  <llnl-app></llnl-app>
+  <root-component></root-component>
 
 
   <!-- Main Angular Libraries -->
@@ -27,16 +33,20 @@
   <!-- Dependencies -->
 
   <!-- Controllers -->
+  <script src="components/root-component/root-component.controller.js"></script>
+  <script src="components/views/views.controller.js"></script>
+  <script src="components/viewDetails/viewDetails.controller.js"></script>
 
   <!-- Components -->
-  <script src="components/llnl-app/llnl-app.component.js"></script>
+  <script src="components/root-component/root-component.component.js"></script>
+  <script src="components/views/views.component.js"></script>
+  <script src="components/viewDetails/viewDetails.component.js"></script>
   <script src="components/bs-navbar/bs-navbar.component.js"></script>
-  <script src="components/bs-thumbnail/bs-thumbnail.component.js"></script>
 
   <!-- Directives -->
 
   <!-- Services -->
-  <script src="services/persons.service.js"></script>
+  <script src="services/view.service.js"></script>
 
   <!-- Application File -->
   <script src="app.js"></script>

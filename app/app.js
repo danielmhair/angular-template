@@ -1,13 +1,25 @@
 'use strict';
 
 angular.module('myApp', [
+  //Bower Dependencies
   'ngComponentRouter',
-  'llnl.component.app',
+
+  //Controllers
+  'llnl.controller.rootController',
+  'llnl.controller.viewsController',
+  'llnl.controller.viewDetailsController',
+
+  //Components
   'bs.component.navbar',
-  'bs.component.thumbnail',
-  'llnl.service.PersonService'
+  'llnl.component.rootComponent',
+  'llnl.component.views',
+  'llnl.component.viewDetails',
+
+  //Services
+  'llnl.service.ViewService'
 ])
 .config(function ($locationProvider) {
   $locationProvider.html5Mode(true);
 })
-.value('$routerRootComponent', 'llnlApp');
+//This is where you tell Angular what component is your "Root Component"
+.value('$routerRootComponent', 'rootComponent');
