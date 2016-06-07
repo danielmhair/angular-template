@@ -29,30 +29,6 @@ module.exports = function(app) {
   app.use(morgan('dev'));
   app.use(express.static(path.join(config.root, 'app')));
 
-  app.route('/api/persons').get(function(req, res) {
-    return res.status(200).json([
-      {
-        name: "Yunki",
-        created: new Date()
-      }, {
-        name: "Ram",
-        created: new Date()
-      }, {
-        name: "Don",
-        created: new Date()
-      }, {
-        name: "Jared",
-        created: new Date()
-      }, {
-        name: "Allen",
-        created: new Date()
-      }, {
-        name: "Dan",
-        created: new Date()
-      }
-    ]);
-  });
-
   app.route('/')
   .get(function(req, res) {
     res.sendFile(path.resolve(app.get('appPath') + '/index.html'));

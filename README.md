@@ -85,7 +85,35 @@ Should you need to change the port number, simply change it there.
 
 ## Directory Layout
 
-![alt tag](https://raw.githubusercontent.com/danielmhair/angular-template/master/app/assets/img/project-layout.jpg)
+    .
+    ├── app
+             ├── app.js
+             ├── app.routes.js
+             ├── app.css
+             ├── css
+             ├── fonts
+             ├── img
+             └── js
+                  ├── lib          # Bower components (via 'bower install...') - defined by the .bowerrc config file
+                  ├── services
+                  ├── directives
+                  └── components                               # All your components
+                       └── <component-name>                    # A component
+                       │   ├── <component-name>.component.js      # The component's definition object
+                       │   ├── <component-name>.html              # The component's view
+                       │   ├── <component-name>.controller.js     # The component's controller
+                      │   └── <component-name>.css               # The component's styling
+                       └── <another-component-name>            # Another component
+    ├── node_modules
+    ├── LICENSE
+    ├── README.md
+    ├── package.json
+    ├── bower.json
+    ├── .bowerrc
+    ├── .gitignore
+    ├── config.js
+    ├── server.routes.js
+    └── server.js
 
 ## Testing
 
