@@ -61,6 +61,8 @@ npm start
 ### 5. Go to the app at the url:
 `http://localhost:3001`.
 
+You are now up and running with Angular 1.5.x using Component-based routing with UI-Router!
+
 NOTE: There is a `config.js` file that has those presets to run the app at `localhost:3001`.
 Should you need to change the port number, simply change it there.
 
