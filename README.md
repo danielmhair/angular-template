@@ -38,8 +38,8 @@ bower install
 We have two kinds of dependencies in this project: tools for our Node server and Angular Framework code (libraries).  The tools help
 us manage the application.
 
-* We get the Node server tools via `npm`, the [node package manager][npm].
-* We get the angular code via `bower`, a [client-side code package manager][bower].
+* We get the Node server tools via `npm`, the [node package manager](http://npmjs.org).
+* We get the angular code via `bower`, a [client-side code package manager](http://bower.io).
 
 Currently, we only have you do 'npm install'. Normally, you would do 'bower install'
 as well, but because Angular's NgComponentRouter is not supported in npm, so we had to
