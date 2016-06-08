@@ -1,2 +1,11 @@
 <h3>{{$ctrl.view.name}}</h3>
-<button class="btn btn-info" ng-click="$ctrl.gotoViews()">Go back to Views</button>
+<div class="alert alert-info">This is the 'view-details' component. This state ('root.views.details') has
+    '/:id' as its url. When a ':' is in a url for ui-router, that means it is a variable. In other words,
+    it can be anything, just as long as you know how to understand that parameter in the component you route it to.</div>
+<div class="alert alert-info">If the route name has a '.' in its name, that means that it is a child of another
+    state, so the url will append its location to its parent's location. Since this route has 'root' and 'views'
+    as parents (noted by the '.' in the state name), then the url adds the app location (localhost:3000), appends
+    the first parent's ('root') url '/', then view's url 'views', then its own url '/:id'.</div>
+<div class="alert alert-info">These details are accessed by using the 'ui-sref' instead of 'href'. 'ui-sref'
+    asks for a state. The states are found in the app.routes.js file.</div>
+<button class="btn btn-info" ui-sref="root">Go back to the Root view</button>

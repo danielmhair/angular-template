@@ -9,8 +9,4 @@ angular.module('llnl.controller.viewDetailsController', [])
                 $scope.view = view;
             });
         };
-
-        $scope.gotoViews = function() {
-            $state.go('root.views');
-        };
     });

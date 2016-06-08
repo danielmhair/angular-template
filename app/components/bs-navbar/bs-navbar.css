@@ -1,3 +1,16 @@
-.bs-navbar.navbar-brand {
+bs-navbar .navbar-brand {
     font-size: 1.5em !important;
+}
+
+bs-navbar .navbar-inverse .navbar-right>li:hover>a {
+    color: white !important;
+}
+
+bs-navbar .navbar-inverse .navbar-right>li>a {
+    color: #9d9d9d !important;
+    background-color: transparent;
+}
+
+bs-navbar .navbar-right>li>a {
+    line-height: 30px;
 }

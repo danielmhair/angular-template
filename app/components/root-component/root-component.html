@@ -1,7 +1,13 @@
 <bs-navbar left-links="$ctrl.leftLinks" right-links="$ctrl.rightLinks" brand="$ctrl.brand"></bs-navbar>
 <div class="container">
     <h1>{{$ctrl.brand.name}}</h1>
-
+    <div class="alert alert-info">Hello, this template helps you understand Component-based routing.</div>
+    <div class="alert alert-warning">What you see on the page right now is known as the 'root-component'. Its state name is 'root'. You will learn about
+    states as well.</div>
+    <div class="alert alert-info">This application uses ui-router to "route" our components to a certain location.
+        Its a bit like ng-route.</div>
+    <div class="alert alert-warning">Click on the links at the top, starting at the 'Views Component' link
+        (this page is 'Root'), to see how components are built.</div>
     <!-- Where the next component will injected -->
     <div ui-view></div>
 </div>
