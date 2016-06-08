@@ -9,11 +9,11 @@ using a Component-based Architecture with UI-Router.
 
 ## Getting Started
 Below are your instructions. Here is an outline:
-1. Prerequisites
-2. Clone this repository
-3. Install dependencies
-4. Run the App
-5. Go to the app at the url
+* 1. Prerequisites
+* 2. Clone this repository
+* 3. Install dependencies
+* 4. Run the App
+* 5. Go to the app at the url
 
 ### 1. Prerequisites
 
