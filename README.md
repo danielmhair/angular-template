@@ -98,9 +98,9 @@ Should you need to change the port number, simply change it there.
 ## Updating Bower and NPM dependencies
 
 You can update the tool dependencies by running:
-```
-npm update
 ```bash
+npm update
+```
 
 This will find the latest versions that match the version ranges specified in the `package.json` file.
 
