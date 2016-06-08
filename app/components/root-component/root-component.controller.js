@@ -1,4 +1,4 @@
-angular.module('llnl.controller.rootController', [])
+angular.module('myApp.controller.rootController', [])
 .controller('rootController', function() {
     var $scope = this;
     $scope.leftLinks = [

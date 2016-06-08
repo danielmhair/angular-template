@@ -1,4 +1,4 @@
-angular.module('llnl.controller.viewDetailsController', [])
+angular.module('myApp.controller.viewDetailsController', [])
     .controller('viewDetailsController', function(ViewService, $state, $stateParams) {
         var $scope = this;
 

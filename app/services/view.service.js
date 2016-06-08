@@ -1,4 +1,4 @@
-angular.module("llnl.service.ViewService", [])
+angular.module("myApp.service.ViewService", [])
 .service('ViewService', function($http, $q) {
     var viewsAPI = "http://localhost:3000/api/..."; //TODO Change url to real location that returns data
     var self = {};

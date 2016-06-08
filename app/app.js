@@ -5,21 +5,21 @@ angular.module('myApp', [
   'ui.router',
 
   //Routes
-  'llnl.routes',
+  'myApp.routes',
 
   //Controllers
-  'llnl.controller.rootController',
-  'llnl.controller.viewsController',
-  'llnl.controller.viewDetailsController',
+  'myApp.controller.rootController',
+  'myApp.controller.viewsController',
+  'myApp.controller.viewDetailsController',
 
   //Components
   'bs.component.navbar',
-  'llnl.component.rootComponent',
-  'llnl.component.views',
-  'llnl.component.viewDetails',
+  'myApp.component.rootComponent',
+  'myApp.component.views',
+  'myApp.component.viewDetails',
 
   //Services
-  'llnl.service.ViewService'
+  'myApp.service.ViewService'
 ])
 .config(function ($locationProvider) {
   $locationProvider.html5Mode(true);

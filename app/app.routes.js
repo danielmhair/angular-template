@@ -1,4 +1,4 @@
-angular.module('llnl.routes', [])
+angular.module('myApp.routes', [])
     .config(function ($stateProvider) {
 
         $stateProvider
