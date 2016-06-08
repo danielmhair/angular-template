@@ -31,7 +31,7 @@ cd <your-project-name>
 ```
 
 ### 3. Install dependencies
-```
+```bash
 npm install
 bower install
 ```
@@ -55,7 +55,7 @@ folder but angular-template changes this location through the `.bowerrc` file.  
 it easier to serve the files by a webserver.*
 
 ### 4. Run the App
-```
+```bash
 npm start
 ```
 ### 5. Go to the app at the url:
@@ -100,13 +100,13 @@ Should you need to change the port number, simply change it there.
 You can update the tool dependencies by running:
 ```
 npm update
-```
+```bash
 
 This will find the latest versions that match the version ranges specified in the `package.json` file.
 
 You can update the Angular dependencies by running:
 
-```
+```bash
 bower update
 ```
 
