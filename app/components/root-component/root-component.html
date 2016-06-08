@@ -5,6 +5,7 @@
     <div class="alert alert-warning"> To learn more about components and states, go to these
         two files <code>app/components/root-component/root-component.component.js</code>
         and <code>app/app.routes.js</code></div>
+    <button class="btn btn-info" ui-sref="root.views" ng-show="!$ctrl.$state.name.includes('root.views')">Show 'views' Component</button>
     <!-- Where the next component will injected -->
     <div ui-view></div>
 </div>

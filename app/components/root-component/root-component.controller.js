@@ -1,18 +1,8 @@
 angular.module('myApp.controller.rootController', [])
-.controller('rootController', function() {
+.controller('rootController', function($state) {
     var $scope = this;
-    $scope.leftLinks = [
-        {
-            name: 'Root',
-            state: 'root'
-        },{
-            name: 'Views Component',
-            state: 'root.views'
-        },{
-            name: 'View 1 Details Component',
-            state: 'root.views.details({id: 1})'
-        }
-    ];
+    $scope.state = $state;
+    $scope.leftLinks = [];
 
     $scope.rightLinks = [
         {
@@ -22,6 +12,7 @@ angular.module('myApp.controller.rootController', [])
     ];
 
     $scope.brand = {
-        name: 'Angular Template'
+        name: 'Angular Template',
+        state: 'root'
     };
 });
