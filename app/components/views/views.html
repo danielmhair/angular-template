@@ -1,9 +1,5 @@
 <h2>My Views</h2>
-<div class="alert alert-info">This is the 'views' component. It's state is 'root.views'.</div>
-<div class="alert alert-warning">For us to show you this component (the 'views' component), we added an attribute in our
-    root-component called 'ui-view' to a 'div' tag (you could add 'ui-view' to any tag you want; we chose a 'div').
-    This tells angular that any children of that state will be put inside that 'div'. Since this state ('root.views')
- has the parent state in its name ('root'), then it is a child of the 'root' state.</div>
+<div class="alert alert-info">This is the 'views' component. Learn more from the file: <code>app/components/views/views.html</code> and <code>app/app.routes.js</code></div>
 <ul class="nav nav-pills">
     <li ng-repeat="view in $ctrl.views" role="presentation" ui-sref-active="active">
         <a ui-sref="root.views.details({id: view.id})">
