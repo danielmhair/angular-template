@@ -23,32 +23,33 @@
 </head>
 <body ng-app="myApp">
   <!-- The line below replaces what others might be use to as 'ng-view' or ui-view=""' -->
-  <root-component></root-component>
+  <div ui-view=""></div>
 
 
   <!-- Main Angular Libraries -->
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/@angular/router/angular1/angular_1_router.js"></script>
+  <script type="text/javascript" src="lib/angular/angular.js"></script>
+  <script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
 
   <!-- Dependencies -->
 
   <!-- Controllers -->
-  <script src="components/root-component/root-component.controller.js"></script>
-  <script src="components/views/views.controller.js"></script>
-  <script src="components/viewDetails/viewDetails.controller.js"></script>
+  <script type="text/javascript" src="components/root-component/root-component.controller.js"></script>
+  <script type="text/javascript" src="components/views/views.controller.js"></script>
+  <script type="text/javascript" src="components/viewDetails/viewDetails.controller.js"></script>
 
   <!-- Components -->
-  <script src="components/root-component/root-component.component.js"></script>
-  <script src="components/views/views.component.js"></script>
-  <script src="components/viewDetails/viewDetails.component.js"></script>
-  <script src="components/bs-navbar/bs-navbar.component.js"></script>
+  <script type="text/javascript" src="components/root-component/root-component.component.js"></script>
+  <script type="text/javascript" src="components/views/views.component.js"></script>
+  <script type="text/javascript" src="components/viewDetails/viewDetails.component.js"></script>
+  <script type="text/javascript" src="components/bs-navbar/bs-navbar.component.js"></script>
 
   <!-- Directives -->
 
   <!-- Services -->
-  <script src="services/view.service.js"></script>
+  <script type="text/javascript" src="services/view.service.js"></script>
 
   <!-- Application File -->
-  <script src="app.js"></script>
+  <script type="text/javascript" src="app.routes.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 </html>

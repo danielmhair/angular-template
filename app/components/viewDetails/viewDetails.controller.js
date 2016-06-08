@@ -1,17 +1,16 @@
 angular.module('llnl.controller.viewDetailsController', [])
-    .controller('viewDetailsController', function(ViewService) {
+    .controller('viewDetailsController', function(ViewService, $state, $stateParams) {
         var $scope = this;
 
-        $scope.$routerOnActivate = function(next, previous) {
-            // Get the hero identified by the route parameter
-            var id = next.params.id;
-            return ViewService.getView(id)
+        $scope.$onInit = function() {
+            $scope.id = $stateParams.id;
+            return ViewService.getView($scope.id)
             .then(function (view) {
                 $scope.view = view;
             });
         };
 
         $scope.gotoViews = function() {
-            $scope.$router.navigate(['Views']);
+            $state.go('root.views');
         };
     });

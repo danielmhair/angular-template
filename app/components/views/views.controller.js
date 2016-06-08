@@ -1,18 +1,14 @@
 angular.module('llnl.controller.viewsController', [])
-    .controller('viewsController', function(ViewService) {
+    .controller('viewsController', function(ViewService, $stateParams) {
         var $scope = this;
-        var selectedId = null;
 
-        $scope.$routerOnActivate = function(next, previous) {
-            console.log(next);
+        $scope.$onInit = function() {
+            $scope.selectedId = null;
+
             return ViewService.getViews()
             .then(function (views) {
                 $scope.views = views;
-                selectedId = next.params.id;
+                $scope.selectedId = $stateParams.params.id;
             });
-        };
-
-        $scope.isSelected = function(view) {
-            return (view.id == selectedId);
         };
     });

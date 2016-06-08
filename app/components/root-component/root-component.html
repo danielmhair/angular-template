@@ -1,6 +1,7 @@
 <bs-navbar left-links="$ctrl.leftLinks" right-links="$ctrl.rightLinks" brand="$ctrl.brand"></bs-navbar>
-<!-- Where the Views Component is injected -->
 <div class="container">
     <h1>{{$ctrl.brand.name}}</h1>
-    <ng-outlet></ng-outlet>
+
+    <!-- Where the next component will injected -->
+    <div ui-view></div>
 </div>

@@ -2,7 +2,10 @@
 
 angular.module('myApp', [
   //Bower Dependencies
-  'ngComponentRouter',
+  'ui.router',
+
+  //Routes
+  'llnl.routes',
 
   //Controllers
   'llnl.controller.rootController',
