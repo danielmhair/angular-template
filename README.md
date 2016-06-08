@@ -4,47 +4,37 @@ This project is an application skeleton for a typical [AngularJS](http://angular
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
 projects.
 
-The template contains a sample AngularJS application and is preconfigured to install the Angular
-framework and a bunch of development and testing tools for instant web development gratification.
-
 The template app doesn't do much, just shows how to wire components together in Angular 1.5.x's way;
-using a Component-based Architecture.
-
+using a Component-based Architecture with UI-Router.
 
 ## Getting Started
+Below are your instructions. Here is an outline:
+1. Prerequisites
+2. Clone this repository
+3. Install dependencies
+4. Run the App
+5. Go to the app at the url
 
-To get you started you can simply clone the angular-template repository and run:
-```
-npm install
-```
+### 1. Prerequisites
 
-### Prerequisites
-
-You need git to clone the angular-template repository. You can get git from
+You need git to clone the angular-template repository. You can get git from:
 [http://git-scm.com/](http://git-scm.com/).
 
-We also use a number of node.js tools to initialize angular-template. You must have node.js and
-its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
+We also use a number of node.js tools to initialize the angular-template. You must have node.js and
+its package manager (npm) installed. You can install this from:
+[http://nodejs.org/](http://nodejs.org/).
 
-### Clone angular-template
-
-Clone the angular-template repository using [git][git]:
-
-```
-git clone https://github.com/danielmhair/angular-template.git
-cd angular-template
-```
-
-If you just want to start a new project without the angular-template commit history then you can do:
-
+### 2. Clone this Repository
 ```bash
-git clone --depth=1 https://github.com/danielmhair/angular-template.git <your-project-name>
+git clone --depth=1 https://github.com/danielmhair/angular-template.git <your-project-name> # The `depth=1` tells git to only pull down one commit worth of historical data.
+cd <your-project-name>
 ```
 
-The `depth=1` tells git to only pull down one commit worth of historical data.
-
-### Install Dependencies
-
+### 3. Install dependencies
+```
+npm install
+bower install
+```
 We have two kinds of dependencies in this project: tools for our Node server and Angular Framework code (libraries).  The tools help
 us manage the application.
 
@@ -55,10 +45,6 @@ Currently, we only have you do 'npm install'. Normally, you would do 'bower inst
 as well, but because Angular's NgComponentRouter is not supported in npm, so we had to
 move that directory over to our lib folder. So for now, just do:
 
-```
-npm install
-```
-
 You should find that you have one new folder in your project.
 
 * `node_modules` - contains the npm packages for the tools we need
@@ -68,20 +54,15 @@ You should find that you have one new folder in your project.
 folder but angular-template changes this location through the `.bowerrc` file.  Putting it in the app folder makes
 it easier to serve the files by a webserver.*
 
-### Run the Application
-
-We have preconfigured the project with a simple development web server.  The simplest way to start
-this server is:
-
+### 4. Run the App
 ```
 npm start
 ```
+### 5. Go to the app at the url:
+`http://localhost:3001`.
 
-Now browse to the app at `http://localhost:3000`.
-
-Keep in mind, there is a config.js file that has those presets to run the app at localhost:3000.
+NOTE: There is a `config.js` file that has those presets to run the app at `localhost:3001`.
 Should you need to change the port number, simply change it there.
-
 
 ## Directory Layout
 
@@ -114,14 +95,9 @@ Should you need to change the port number, simply change it there.
     ├── server.routes.js                                # The routes you allow your angular app to use
     └── server.js                                       # The server to runs your angular application
 
-## Updating Angular
-
-Previously we recommended that you merge in changes to angular-template into your own fork of the project.
-Now that the angular framework library code and tools are acquired through package managers (npm and
-bower) you can use these tools instead to update the dependencies.
+## Updating Bower and NPM dependencies
 
 You can update the tool dependencies by running:
-
 ```
 npm update
 ```
@@ -139,15 +115,15 @@ This will find the latest versions that match the version ranges specified in th
 ## Angular Cheat Sheet
 
 I have made an Angular Cheat sheet to go along with this project.
-* ![alt tag](https://raw.githubusercontent.com/danielmhair/angular-template/master/angular-cheatsheet.jpg)
+* ![Angular 1.5 Cheat Sheet](https://raw.githubusercontent.com/danielmhair/angular-template/master/angular-cheatsheet.jpg)
 
 ## To-do List
 - [ ] Upload Angular Cheatsheet
 - [x] Setup Component-based architecture in Angular App
-- [ ] Create a Robust Service showing the $q and $http service
-- [ ] Create 2 Controllers; 1 in the component.js file, and the other in a separate file
-- [ ] Add Component lifecycle for an example
-- [ ] Convert this using TypeScript and ECMAScript 2016
+- [x] Create a Robust Service showing the $q and $http service
+- [ ] Add components that use UI-Router
+- [ ] Add Component lifecycle as an example
+- [ ] Convert this to TypeScript and ECMAScript 2016
 
 ## Contact
 
