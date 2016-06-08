@@ -3,8 +3,6 @@ angular.module("myApp.service.ViewService", [])
     var viewsAPI = "http://localhost:3000/api/..."; //TODO Change url to real location that returns data
     var self = {};
 
-    //TODO Remove this "when" call when you have real data
-
     self.getViews = function() {
         var deferred = $q.defer();
 

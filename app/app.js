@@ -23,6 +23,4 @@ angular.module('myApp', [
 ])
 .config(function ($locationProvider) {
   $locationProvider.html5Mode(true);
-})
-//This is where you tell Angular what component is your "Root Component"
-.value('$routerRootComponent', 'rootComponent');
+});

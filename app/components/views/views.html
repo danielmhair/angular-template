@@ -1,5 +1,6 @@
 <h2>My Views</h2>
-<div class="alert alert-info">This is the 'views' component. Learn more from the file: <code>app/components/views/views.html</code> and <code>app/app.routes.js</code></div>
+<div class="alert alert-info">This is the 'views' component. It's state is 'root.views'. Files associated with this
+ state and component is: <code>app/components/views/views.component.js</code> and <code>app/app.routes.js</code></div>
 <ul class="nav nav-pills">
     <li ng-repeat="view in $ctrl.views" role="presentation" ui-sref-active="active">
         <a ui-sref="root.views.details({id: view.id})">

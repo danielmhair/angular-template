@@ -1,7 +1,10 @@
 <bs-navbar left-links="$ctrl.leftLinks" right-links="$ctrl.rightLinks" brand="$ctrl.brand"></bs-navbar>
 <div class="container">
     <h1>{{$ctrl.brand.name}}</h1>
-    <div class="alert alert-info">Hello, this template uses UI Router and Components for its Angular 1.5.x application.</div>
-    <!-- Where the next state will be injected -->
+    <div class="alert alert-info">Hello, this template helps you understand Component-based routing.</div>
+    <div class="alert alert-warning"> To learn more about components and states, go to these
+        two files <code>app/components/root-component/root-component.component.js</code>
+        and <code>app/app.routes.js</code></div>
+    <!-- Where the next component will injected -->
     <div ui-view></div>
 </div>

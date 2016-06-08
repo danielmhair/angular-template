@@ -3,17 +3,14 @@ angular.module('myApp.routes', [])
     $stateProvider
     .state('root', {
         url: '/',
-        template: '<root-component></root-component>',
-        controller: 'rootController'
+        template: '<root-component></root-component>'
     })
     .state('root.views', {
         url: 'views',
-        template: '<views></views>',
-        controller: 'viewsController'
+        template: '<views></views>'
     })
     .state('root.views.details', {
         url: '/:id',
-        template: '<view-details></view-details>',
-        controller: 'viewDetailsController'
+        template: '<view-details></view-details>'
     })
 });

@@ -1,5 +1,5 @@
 angular.module('myApp.component.viewDetails', [])
 .component('viewDetails', {
-    templateUrl: 'components/viewDetails/viewDetails.html',
+    templateUrl: 'components/view-details/view-details.html',
     controller: 'viewDetailsController'
 });
