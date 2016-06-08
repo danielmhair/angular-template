@@ -4,7 +4,6 @@ angular.module('llnl.controller.viewDetailsController', [])
 
         $scope.$routerOnActivate = function(next, previous) {
             // Get the hero identified by the route parameter
-            console.log(next);
             var id = next.params.id;
             return ViewService.getView(id)
             .then(function (view) {

@@ -5,8 +5,9 @@ angular.module('llnl.component.views', [])
     $routeConfig: [//Route Config tells what to populate your <ng-outlet> tag with
         {
             path: '/:id', //The path to get to this component
-            name: 'ViewDetail', //Name to use when using ng-link="['View1']" as an attribute
-            component: 'viewDetail' //The component that this path will use
+            name: 'ViewDetails', //Name to use when using ng-link="['View1']" as an attribute
+            component: 'viewDetails', //The component that this path will use
+            useAsDefault: true
         }
     ]
 });

@@ -29,7 +29,7 @@ module.exports = function(app) {
   app.use(morgan('dev'));
   app.use(express.static(path.join(config.root, 'app')));
 
-  app.route('/')
+  app.route('/*')
   .get(function(req, res) {
     res.sendFile(path.resolve(app.get('appPath') + '/index.html'));
   });
